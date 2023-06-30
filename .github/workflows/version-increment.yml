@@ -16,11 +16,5 @@ jobs:
         uses: phips28/gh-action-bump-version@master
         with:
           GITHUB_TOKEN: ${{ secrets.GTOKEN }}
-          
-      - uses: "marvinpinto/action-automatic-releases@latest"
-        with:
-          repo_token: "${{ secrets.GTOKEN }}"
-          automatic_release_tag: "latest"
-          prerelease: false
 
 
