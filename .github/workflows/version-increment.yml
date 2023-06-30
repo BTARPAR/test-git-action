@@ -15,4 +15,4 @@ jobs:
       - name: Run Version Increment Action
         uses: BTARPAR/custom-action@v1
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.GTOKEN }}
