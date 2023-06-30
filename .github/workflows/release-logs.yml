@@ -3,9 +3,10 @@ name: Generate Release Log
 
 # Run on every commit tag which begins with "v" (e.g., "v0.1.4")
 on:
-  push:
-    tags:
-      - "*"
+  workflow_run:
+    workflows: ["Version Increment Workflow"]
+    types:
+      - completed
 
 # Automatically create a GitHub Release, with release details specified (the relevant commits)
 jobs:
