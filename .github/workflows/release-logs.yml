@@ -10,10 +10,14 @@ on:
 
 # Automatically create a GitHub Release, with release details specified (the relevant commits)
 jobs:
-  release:
+  release-logs:
     name: "Release"
     runs-on: "ubuntu-latest"
     steps:
+      - name: "Build & test"
+        run: |
+          echo "${{ JSON.stringyfy(github) }}"
+    
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
