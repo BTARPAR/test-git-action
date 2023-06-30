@@ -1,6 +1,6 @@
 {
   "name": "test-git-action",
-  "version": "5.0.10",
+  "version": "5.0.11",
   "main": "index.js",
   "type": "module",
   "license": "ISC",
