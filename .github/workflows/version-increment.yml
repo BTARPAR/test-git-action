@@ -16,9 +16,10 @@ jobs:
         uses: phips28/gh-action-bump-version@master
         with:
           GITHUB_TOKEN: ${{ secrets.GTOKEN }}
-#       - name: Version Increment Action
-#         uses: BTARPAR/custom-action@v5.0.2
-#         with:
-#           github-token: ${{ secrets.GTOKEN }}
+          
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GTOKEN }}"
+          prerelease: false
 
 
