@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@actions/core": "^1.10.0",
-    "@octokit/rest": "^19.0.13"
+    "@octokit/rest": "^19.0.13",
+    "react": "1.0.0"
   }
 }
