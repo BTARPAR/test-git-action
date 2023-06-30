@@ -15,7 +15,7 @@ jobs:
       - name: Automated Version Bumo
         uses: phips28/gh-action-bump-version@master
         with:
-          github-token: ${{ secrets.GTOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GTOKEN }}
 #       - name: Version Increment Action
 #         uses: BTARPAR/custom-action@v5.0.2
 #         with:
